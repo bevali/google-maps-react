@@ -1,5 +1,7 @@
-## Note
-This package is a fork of google-maps-react@2.0.3 with stringrefs removed.
+## Warning
+This package is a fork of the unpublished google-maps-react@2.0.3 with string refs removed.
+
+It will be removed once google-maps-react@2.0.3 is published.
 
 https://www.npmjs.com/package/google-maps-react
 
@@ -18,14 +20,14 @@ See the [demo](https://fullstackreact.github.io/google-maps-react) and [accompan
 First, install the library:
 
 ```shell
-npm install --save google-maps-react
+npm install --save google-maps-react-preact
 ```
 ## Automatically Lazy-loading Google API
 
 The library includes a helper to wrap around the Google maps API. The `GoogleApiWrapper` Higher-Order component accepts a configuration object which *must* include an `apiKey`. See [lib/GoogleApi.js](https://github.com/fullstackreact/google-maps-react/blob/master/src/lib/GoogleApi.js#L4) for all options it accepts.
 
 ```javascript
-import {GoogleApiWrapper} from 'google-maps-react';
+import {GoogleApiWrapper} from 'google-maps-react-preact';
 
 // ...
 
@@ -63,7 +65,7 @@ export default GoogleApiWrapper({
 ## Sample Usage With Lazy-loading Google API:
 
 ```javascript
-import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
+import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react-preact';
 
 export class MapContainer extends Component {
   render() {
@@ -557,7 +559,7 @@ An example template might look like: [https://codesandbox.io/s/rzwrk2854](https:
 
 ```shell
 git clone https://github.com/fullstackreact/google-maps-react.git
-cd google-maps-react
+cd google-maps-react-preact
 npm install
 make dev
 ```
