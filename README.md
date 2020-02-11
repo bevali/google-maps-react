@@ -1,3 +1,8 @@
+## Note
+This package is a fork of google-maps-react@2.0.3 with stringrefs removed.
+
+https://www.npmjs.com/package/google-maps-react
+
 <p align="center">
   <img src="resources/readme/fullstackreact-google-maps-tutorial.png" alt="Fullstack React Google Maps Tutorial" />
 </p>
